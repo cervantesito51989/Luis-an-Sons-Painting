@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luis and Sons Painting</title>
-  <style>
-    body { font-family: Arial; margin: 0; padding: 0; }
-    header { background: #1e3a8a; color: white; padding: 40px; text-align: center; }
-    section { padding: 40px; }
-    .box { margin-bottom: 20px; }
-    footer { background: #111; color: white; text-align: center; padding: 20px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Luis and Sons Painting</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f8;
+  color: #111;
+}
+
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1e3a8a;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.cta {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Luis and Sons Painting</h1>
-  <p>Interior & Exterior Painting in Elgin, Illinois</p>
+  <h1>🎨 Luis and Sons Painting</h1>
+  <p>Interior & Exterior Painting • Elgin, Illinois</p>
 </header>
 
-<section>
-  <h2>About Us</h2>
-  <p>We have over 10 years of experience painting homes in Elgin and surrounding areas.</p>
-</section>
+<div class="container">
 
-<section>
-  <h2>Services</h2>
-  <ul>
-    <li>Interior Painting (walls, ceilings, doors, trim)</li>
-    <li>Exterior Painting (siding, shutters, gutters)</li>
-  </ul>
-</section>
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>We are a family-owned painting company with over 10 years of experience delivering high-quality interior and exterior painting services.</p>
 
-<section>
-  <h2>Service Areas</h2>
-  <p>Elgin, South Elgin, Streamwood, Bartlett, Carpentersville, Lake in the Hills</p>
-</section>
+    <!-- Video will go here -->
+    <p><strong>Welcome Video Coming Soon</strong></p>
+  </div>
 
-<section>
-  <h2>Contact</h2>
-  <p>Luis Jr: 224-290-2555</p>
-  <p>Luis Sr: 224-465-4996</p>
-  <p>Free Estimates Available</p>
-</section>
+  <div class="card">
+    <h2>Services</h2>
+    <ul>
+      <li>Interior Painting (walls, ceilings, doors, trim)</li>
+      <li>Exterior Painting (siding, shutters, gutters)</li>
+      <li>Residential Homes</li>
+      <li>Detailed Prep & Clean Work</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Service Areas</h2>
+    <p>Elgin, South Elgin, Streamwood, Bartlett, Carpentersville, Lake in the Hills</p>
+  </div>
+
+  <div class="cta">
+    <h2>Free Estimates</h2>
+    <p>Call now to schedule your free estimate today</p>
+    <p><strong>Luis Jr: 224-290-2555</strong></p>
+    <p><strong>Luis Sr: 224-465-4996</strong></p>
+  </div>
+
+</div>
 
 <footer>
-  <p>© 2026 Luis and Sons Painting</p>
+  © 2026 Luis and Sons Painting
 </footer>
 
 </body>
