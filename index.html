@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Luis and Sons Painting</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -19,24 +18,31 @@ body {
 header {
   background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: white;
-  padding: 70px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+/* LOGO */
+.logo {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 15px;
 }
 
-header p {
-  font-size: 18px;
-  opacity: 0.9;
+/* VIDEO */
+.video {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  margin: 20px auto 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 .card {
@@ -47,27 +53,12 @@ header p {
   margin-bottom: 20px;
 }
 
-h2 {
-  color: #1e3a8a;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.video {
-  width: 100%;
-  border-radius: 12px;
-  margin-top: 10px;
-}
-
 .cta {
   background: #2563eb;
   color: white;
   padding: 20px;
-  text-align: center;
   border-radius: 15px;
-  margin-top: 20px;
+  text-align: center;
 }
 
 footer {
@@ -82,46 +73,69 @@ footer {
 <body>
 
 <header>
-  <h1>🎨 Luis and Sons Painting</h1>
-  <p>Interior & Exterior Painting • Elgin, Illinois</p>
+
+<!-- 🐶 CARTOON ROTTWEILER LOGO (INLINE SVG) -->
+<div class="logo">
+<svg viewBox="0 0 200 200" width="140" height="140">
+  <circle cx="100" cy="100" r="95" fill="#111827"/>
+  <circle cx="70" cy="85" r="12" fill="#fff"/>
+  <circle cx="130" cy="85" r="12" fill="#fff"/>
+  <circle cx="70" cy="85" r="5" fill="#000"/>
+  <circle cx="130" cy="85" r="5" fill="#000"/>
+  <path d="M60 130 Q100 160 140 130" stroke="#fff" stroke-width="6" fill="none"/>
+  <path d="M50 70 Q100 20 150 70" stroke="#b91c1c" stroke-width="10" fill="none"/>
+  <text x="100" y="180" text-anchor="middle" fill="white" font-size="14">PAINT PRO</text>
+</svg>
+</div>
+
+<h1>Luis and Sons Painting</h1>
+<p>Interior & Exterior Painting • Elgin, Illinois</p>
+
+<!-- 🎥 WELCOME VIDEO -->
+<div class="video">
+<iframe
+width="100%"
+height="400"
+src="https://www.youtube.com/embed/uVdsnEbu7pU"
+title="Welcome Video"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+
 </header>
 
 <div class="container">
 
-  <div class="card">
-    <h2>Welcome</h2>
-    <p>We are a family-owned painting company with over 10 years of experience delivering high-quality interior and exterior painting services.</p>
+<div class="card">
+<h2>About Us</h2>
+<p>We are a family-owned painting company with over 10 years of experience serving Elgin and surrounding areas.</p>
+</div>
 
-    <!-- Video will go here -->
-    <p><strong>Welcome Video Coming Soon</strong></p>
-  </div>
+<div class="card">
+<h2>Services</h2>
+<ul>
+<li>Interior Painting (walls, ceilings, doors, trim)</li>
+<li>Exterior Painting (siding, shutters, gutters)</li>
+</ul>
+</div>
 
-  <div class="card">
-    <h2>Services</h2>
-    <ul>
-      <li>Interior Painting (walls, ceilings, doors, trim)</li>
-      <li>Exterior Painting (siding, shutters, gutters)</li>
-      <li>Residential Homes</li>
-      <li>Detailed Prep & Clean Work</li>
-    </ul>
-  </div>
+<div class="card">
+<h2>Service Areas</h2>
+<p>Elgin, South Elgin, Streamwood, Bartlett, Carpentersville, Lake in the Hills</p>
+</div>
 
-  <div class="card">
-    <h2>Service Areas</h2>
-    <p>Elgin, South Elgin, Streamwood, Bartlett, Carpentersville, Lake in the Hills</p>
-  </div>
-
-  <div class="cta">
-    <h2>Free Estimates</h2>
-    <p>Call now to schedule your free estimate today</p>
-    <p><strong>Luis Jr: 224-290-2555</strong></p>
-    <p><strong>Luis Sr: 224-465-4996</strong></p>
-  </div>
+<div class="cta">
+<h2>Free Estimates</h2>
+<p>Luis Jr: 224-290-2555</p>
+<p>Luis Sr: 224-465-4996</p>
+</div>
 
 </div>
 
 <footer>
-  © 2026 Luis and Sons Painting
+© 2026 Luis and Sons Painting
 </footer>
 
 </body>
